@@ -48,3 +48,72 @@
  .text-more:hover{
     color: aqua;
  }
+
+ .mouse{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ }
+.mouse>i{
+    font-size: 1.4rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+ @media only screen and (max-width: 767px) {
+   #main-text{
+    margin-top: -34vw;
+   }
+   #main-text>p{
+    font-size: .8rem;
+   }
+   #main-text>h1{
+    font-size: 2.8rem;
+   padding-top: 2vw;
+   }
+   #main-text>h1>.travol{
+    position: relative;
+    top: 50%;
+    left: -3%;
+    transform: translate(-50%, -50%);
+   }
+   #frame-img{
+    height: 110vw !important;
+    width: 80vw;
+   }
+   #full-banner{
+    padding: 2vw;
+   }
+   #wherejourney{
+    padding-left: 5vw;
+   }
+   .capitalize{
+    font-size: 1.5rem;
+   }
+   .containerr{
+    padding: 15px;
+   }
+   .w-full .text-white{
+   font-size: 1rem;
+   }
+   #ft-icon{
+    padding-left: 15px;
+   }
+  }

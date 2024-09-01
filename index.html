@@ -4,9 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravIndia - Your Journey Begins</title>
+    <meta name="title" content="TravIndia - Your Journey Begins">
+    <meta name="description" content="Explore the best travel destinations in India with TravIndia. Your journey to discovering India's beauty starts here.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.travindia.com/">
+    <meta property="og:title" content="TravIndia - Your Journey Begins">
+    <meta property="og:description" content="Explore the best travel destinations in India with TravIndia. Your journey to discovering India's beauty starts here.">
+    <meta property="og:image" content="https://www.travindia.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.travindia.com/">
+    <meta property="twitter:title" content="TravIndia - Your Journey Begins">
+    <meta property="twitter:description" content="Explore the best travel destinations in India with TravIndia. Your journey to discovering India's beauty starts here.">
+    <meta property="twitter:image" content="https://www.travindia.com/images/twitter-image.jpg">
+
+    <!-- Additional Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="India travel, travel guide, best places to visit in India, India tourism, travel tips, Indian destinations">
+    <meta name="author" content="TravIndia Team">
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
+<style>
+        #motor{
+                background-color: gainsboro;
+        }
+           .containerr {
+            max-width: 1250px;
+            margin: 0 auto;
+           padding-top: 70px;
+           padding-bottom: 70px;
+           background-color: transparent;
+           font-family: poppins;
+            
+        }
+        .containerr>h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2.2rem;
+            font-weight: 1000;
+        }
+        .vehicles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+        .vehicle-card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.055);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: calc(33.333% - 20px);
+            min-width: 280px;
+            height: 520px;
+        }
+        .vehicle-card:hover {
+            transform: translateY(-5px);
+        }
+        .vehicle-image {
+            width: 100%;
+            height: 290px;
+            object-fit: cover;
+        }
+        .vehicle-info {
+            padding: 20px;
+        }
+        .vehicle-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .vehicle-description {
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .vehicle-price {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            .vehicle-card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .vehicle-card {
+                width: 100%;
+            }
+        }
+</style>
 <body class="font-primary">
     <main class="w-full">
     <section class="w-full h-[100vh]  bg-header  bg-cover bg-no-repeat bg-center bg-color1 bg-blend-multiply bg-opacity-60 " >
@@ -39,8 +146,10 @@
  <!-- header for mobile -->
  <header
  class="w-[95%] sm:w-[70%] md:w-[80%] container flex h-[60px] justify-between  items-center  lg:hidden  py-[45px] relative border-b-[1px] border-white border-opacity-40 ">
+
  <figure class="w-[140px]">
-    <img src="img/logo-light.png" alt="" class="w-[100%]">
+        <!--Mobile logo-->
+    <img src="" alt="" class="w-[100%]">
  </figure>
  <div class=" w-1/2 h-full flex justify-end items-center ">
      <i class="bi bi-list text-3xl text-white cursor-pointer ham-menu-icon"></i>
@@ -75,10 +184,12 @@
 
     </section>
    <section id="home-section" class="w-full flex justify-center mt-[180px]">
-    <div class="w-[700px] md:w-[900px] container h-auto  " style="width: 75vw;">
-        <p class="w-full text-center uppercase text-white tracking-widest [word-spacing:8px] mb-4">Discover India’s Secrets: Travel, Experience, Transform</p>
-        <h1 class="w-full text-center text-white text-5xl md:text-7xl font-secondary uppercase tracking-widest">Your Journey Begins with <span class="travol">TravIndia</span></h1>
-    </div>
+   
+    <div id="main-text" class="w-[700px] md:w-[900px] container h-auto  " style="width: 75vw;">
+        <p id="firstText" class="w-full text-center uppercase text-white tracking-widest [word-spacing:8px] mb-4">Discover India’s Secrets: Travel, Experience, Transform</p>
+        <h1 id="bigText" class="w-full text-center text-white text-5xl md:text-7xl font-secondary uppercase tracking-widest">Your Journey Begins with <span class="travol">TravIndia</span></h1>
+       <div class="mouse"><i class="bi bi-mouse"></i></div>
+</div>
    </section>
    <!-- <section class="w-full justify-center mt-[80px] hidden lg:flex relative">
         <div class=" bg-white bg-opacity-40 container absolute w-[1000px] xl:w-[1200px] h-[100px] flex justify-center items-center backdrop-blur-lg">
@@ -135,15 +246,15 @@
         <div class="w-full container flex justify-between flex-wrap px-0 2xl:px-36 h-auto py-16 ">
                 <div class="w-full lg:w-[50%]  bg-color px-5 ">
                         <p class="text-color4 uppercase">The best travel services</p>
-                        <p class="text-color3 text-5xl font-bold uppercase font-secondary my-4" >Discover<span class="text-color1"> India</span> with Our Expert Guide</p>
-                        <p class="text-color6">Welcome to Explore India Journeys! Based in vibrant Rajasthan, we specialize in crafting unforgettable travel experiences across India. From the majestic forts of Rajasthan to the serene backwaters of Kerala,</p>
-                        <p class="text-color6 my-4">our expert team ensures seamless and personalized adventures. Discover India’s rich heritage and natural beauty with us—where every journey is a story waiting to be told.</p>
-                        <div class="flex items-center"> <i class="bi bi-check text-white bg-color4  rounded-[50%] px-2 py-1 me-3"></i> <p class="text-color6">10 Years of Experience</p></div>
-                        <div class="flex items-center my-4"> <i class="bi bi-check text-white bg-color4  rounded-[50%] px-2 py-1 me-3"></i> <p class="text-color6">150+ Tour Destinations</p></div>
-                        <div class="flex items-center"><i class="bi bi-telephone-forward text-color1 text-2xl me-3"></i><div><p class="text-color6 ">For information</p><p class="text-color6 text-2xl">+91 9783441735</p></div></div>
+                        <p id="subHead" class="text-color3 text-5xl font-bold uppercase font-secondary my-4" >Discover<span class="text-color1"> India</span> with Our Expert Guide</p>
+                        <p class="text-color6 p-sub">Welcome to Explore India Journeys! Based in vibrant Rajasthan, we specialize in crafting unforgettable travel experiences across India. From the majestic forts of Rajasthan to the serene backwaters of Kerala,</p>
+                        <p class="text-color6 my-4 p-sub">our expert team ensures seamless and personalized adventures. Discover India’s rich heritage and natural beauty with us—where every journey is a story waiting to be told.</p>
+                        <div class="flex items-center p-sub"> <i class="bi bi-check text-white bg-color4  rounded-[50%] px-2 py-1 me-3"></i> <p class="text-color6">10 Years of Experience</p></div>
+                        <div class="flex items-center my-4 p-sub"> <i class="bi bi-check text-white bg-color4  rounded-[50%] px-2 py-1 me-3"></i> <p class="text-color6">150+ Tour Destinations</p></div>
+                        <div class="flex items-center p-sub"><i class="bi bi-telephone-forward text-color1 text-2xl me-3"></i><div><p class="text-color6 ">For information</p><p class="text-color6 text-2xl">+91 9783441735</p></div></div>
                 </div>
                 <div class=" w-full lg:w-[50%]   flex flex-col justify-center items-center bg-color5 h-auto pb-8 lg:pb-0 mt-10 lg:mt-0 ">
-                        <figure class="w-[70%] h-[500px] relative">
+                        <figure class="w-[70%] h-[500px] relative" id="frame-img">
                                 <div class="w-[100%] h-[100%] bg-color4 absolute left-8 top-8"></div>
                                 <img src="https://plus.unsplash.com/premium_photo-1661930618375-aafabc2bf3e7?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-[100%] h-[100%] absolute z-10 object-cover hover:scale-[.95] transition-all duration-500">
                         </figure>
@@ -156,7 +267,7 @@
                         <p class="text-color4 uppercase px-5">Choose your place</p>
                         <p class="text-5xl font-secondary text-color3 px-5">Popular <span class="text-color1">Tours</span></p>
                         <div class="flex flex-wrap md:justify-between gap-10 px-6 xl:px-0 py-8 lg:px-3 ">
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
                                         <div class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
                                                 <p class="text-3xl text-color3 capitalize font-secondary">Jaipur-Delhi</p>
                                                 <p class="text-color1 mb-4">Jaipur-Delhi Round-Trip & Full-Day Hire</p>
@@ -176,7 +287,7 @@
                                                 <p class="text-right">Contact For More</p>
                                         </figcaption>
                                 </figure>
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
                                         <div class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
                                                 <p class="text-3xl text-color3 capitalize font-secondary">Delhi-Jaipur</p>
                                                 <p class="text-color1 mb-4">Delhi-Jaipur Round-Trip & Full-Day Hire</p>
@@ -196,7 +307,7 @@
                                                 <p class="text-right">Contact For More</p>
                                         </figcaption>
                                 </figure>
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000">
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000">
                                         <div class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
                                                 <p class="text-3xl text-color3 capitalize font-secondary">Mathura, Vrindavan</p>
                                                 <p class="text-color1 mb-4">Mathura Vrindavan Visit</p>
@@ -216,7 +327,7 @@
                                                 <p class="text-right">Contact For More</p>
                                         </figcaption>
                                 </figure>
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
                                         <div class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
                                                 <p class="text-3xl text-color3 capitalize font-secondary">Chaar Dham Yatra</p>
                                                 <p class="text-color1 mb-4">Char Dham Yatra Customized Packages</p>
@@ -236,7 +347,7 @@
                                                 <p class="text-right">Contact For More</p>
                                         </figcaption>
                                 </figure>
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
                                         <div class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
                                                 <p class="text-3xl text-color3 capitalize font-secondary">Agra Tour</p>
                                                 <p class="text-color1 mb-4">Agra Tour: Taj Mahal & More</p>
@@ -256,7 +367,7 @@
                                                 <p class="text-right">Contact For More</p>
                                         </figcaption>
                                 </figure>
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
                                         <div class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
                                                 <p class="text-3xl text-color3 capitalize font-secondary">Amritsar Tour</p>
                                                 <p class="text-color1 mb-4">Amritsar Tour: Golden Temple & More</p>
@@ -311,13 +422,13 @@
     </section>
     <section id="" class="w-full flex justify-center bg-color7 lg:h-[800px]">
         <div class="w-full container 2xl:px-36 py-16 bg-color7 ">
-                <p class="text-color4 uppercase px-5">MOST BOOKED TRIPS</p>
-                <p class="text-3xl sm:text-5xl font-secondary text-color1 px-5">Travel <span class=" text-color3">India</span></p>
+                <p class="text-color4 uppercase px-5 mtt">MOST BOOKED TRIPS</p>
+                <p class="text-3xl sm:text-5xl font-secondary text-color1 px-5 mtt">Travel <span class=" text-color3">India</span></p>
                 <div class="w-full flex lg:relative py-10 flex-wrap lg:px-3 xl:px-0 px-6">
-                        <figure class="w-full lg:w-[70%] lg:absolute" style="border: 0px solid navy;">
+                        <figure class="w-full lg:w-[70%] lg:absolute ptt"  style="border: 0px solid navy;">
                                 <img src="https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-[100%]">
                         </figure>
-                        <div class="w-full lg:w-[50%] lg:absolute lg:h-[400px] bg-map bg-no-repeat bg-center z-10 lg:right-0 xl:top-[170%] md:top-20 px-10 py-16 bg-white" style="border: 0px solid navy;" >
+                        <div class="w-full lg:w-[50%] lg:absolute lg:h-[400px] bg-map bg-no-repeat bg-center z-10 lg:right-0 xl:top-[170%] md:top-20 px-10 py-16 bg-white ptt" style="border: 0px solid navy;" >
                                 <p class="uppercase text-color1">Travel India</p>
                                 <p class="uppercase text-3xl font-secondary text-color3 pb-4">Jaipur-Delhi / Delhi-Jaipur</p>
                                 <p class="text-color6">Our travelers' top choices consistently highlight the bustling routes between Jaipur and Delhi. Whether you're flying from Jaipur to Delhi or heading from Delhi to Jaipur, these journeys remain our most popular routes.</p>
@@ -337,22 +448,22 @@
                 </div>
         </div>
     </section>
-    <section id="" class="w-full bg-boat bg-cover bg-bottom bg-no-repeat h-[50vh] flex justify-center bg-color2 bg-blend-multiply bg-opacity-50">
+    <section id="full-banner" class="w-full bg-boat bg-cover bg-bottom bg-no-repeat h-[50vh] flex justify-center bg-color2 bg-blend-multiply bg-opacity-50">
        <div class="w-full container flex justify-center items-center flex-col">
-        <p class="text-white font-secondary text-3xl 2xl:text-6xl">Where Journeys Begin and Memories Last.</p>
+        <p id="wherejourney" class="text-white font-secondary text-3xl 2xl:text-6xl">Where Journeys Begin and Memories Last.</p>
         <div class="flex mt-5 gap-5">
                 <div class="flex items-center"><i class="bi bi-geo-alt text-white text-2xl me-2"></i><p class="text-white">TravIndia.com</p></div>
-                <div class="flex items-center"><i class="bi bi-clock text-white text-2xl me-2"></i><p class="text-white"> Book Your Journey Now!</p></div>
+                <div class="flex items-center"><i class="bi bi-clock text-white text-2xl me-2"></i><p class="text-white"> Book Your Journey!</p></div>
         </div>
        </div>
     </section>
     <section id="popular-section" class="w-full flex justify-center bg-color7 py-8 ">
         <div class="w-full container 2xl:px-36">
                 <div>
-                        <p class="text-color4 uppercase px-5">MOST POPULAR</p>
-                        <p class="text-5xl font-secondary text-color3 px-5">Popular <span class="text-color1">Destination</span></p>
+                        <p class="text-color4 uppercase px-5 popl">MOST POPULAR</p>
+                        <p class="text-5xl font-secondary text-color3 px-5 popl">Popular <span class="text-color1">Destination</span></p>
                         <div class="flex flex-wrap justify-center xl:justify-between gap-10 px-6 xl:px-0 py-8 lg:px-3 ">
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative  transition-all duration-1000 overflow-hidden group ">   
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative  transition-all duration-1000 overflow-hidden group ">   
                                         <img src="https://w0.peakpx.com/wallpaper/534/827/HD-wallpaper-kedarnath-cloud-sky.jpg" alt="" class="w-[100%] h-[100%] object-cover group-hover:brightness-75 group-hover:scale-[1.2] absolute transition-all duration-1000">
                                         <p class="absolute uppercase text-white bg-color1 px-4 py-1 right-1 top-12 rotate-[-90deg] ">AVAILABLE</p>
                                         <figcaption class="absolute text-white bottom-[20px] left-5  group-hover:bottom-[50px]  transition-all duration-700 w-full  ">
@@ -364,8 +475,8 @@
                                                 
                                         </figcaption>
                                 </figure>
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative  transition-all duration-1000 overflow-hidden group ">   
-                                        <img src="https://images.unsplash.com/photo-1707938186244-b75b89aede40?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-[100%] h-[100%] object-cover group-hover:brightness-75 group-hover:scale-[1.2] absolute transition-all duration-1000">
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative  transition-all duration-1000 overflow-hidden group ">   
+                                         <img src="https://images.unsplash.com/photo-1707938186244-b75b89aede40?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-[100%] h-[100%] object-cover group-hover:brightness-75 group-hover:scale-[1.2] absolute transition-all duration-1000">
                                         <p class="absolute uppercase text-white bg-color1 px-4 py-1 right-1 top-12 rotate-[-90deg] ">AVAILABLE</p>
                                         <figcaption class="absolute text-white bottom-[20px] left-5  group-hover:bottom-[50px]  transition-all duration-700 w-full  ">
                                                <div class="flex after:contetn-[''] after:h-[1px] after:bg-op-50 after:w-[20%] after:bg-white after:absolute after:bottom-[-8px] group-hover:after:w-[90%]  after:transition-all after:duration-1000" ><i class="bi bi-geo-alt text-2xl text-white me-2"></i> <p class="capitalize font-secondary text-3xl">Vrindavan</p></div>
@@ -376,7 +487,7 @@
                                                 
                                         </figcaption>
                                 </figure>
-                                <figure class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative  transition-all duration-1000 overflow-hidden group ">   
+                                <figure id="vlv" class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative  transition-all duration-1000 overflow-hidden group ">   
                                         <img src="https://images.pexels.com/photos/13918457/pexels-photo-13918457.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="w-[100%] h-[100%] object-cover group-hover:brightness-75 group-hover:scale-[1.2] absolute transition-all duration-1000">
                                         <p class="absolute uppercase text-white bg-color1 px-4 py-1 right-1 top-12 rotate-[-90deg] ">AVAILABLE</p>
                                         <figcaption class="absolute text-white bottom-[20px] left-5  group-hover:bottom-[50px]  transition-all duration-700 w-full  ">
@@ -391,6 +502,14 @@
                         </div>
                 </div>
         </div>
+    </section>
+    <section id="motor">
+        <div class="containerr">
+                <h1>Choose Your Travel Vehicle</h1>
+                <div class="vehicles" id="vehiclesContainer">
+                    <!-- Vehicle cards will be dynamically added here -->
+                </div>
+            </div>        
     </section>
     <!-- <section class="w-full flex justify-center bg-color3 py-8 h-auto">
         <div class="w-full container 2xl:px-36 h-auto">
@@ -445,21 +564,21 @@
     <section id="contact-section" class="w-full flex justify-center h-auto  bg-color3">
         <footer class="w-full container h-auto flex flex-col 2xl:px-36 ">
                 <div class="flex justify-center border items-center boder-1 border-color5 my-10 flex-wrap mx-6 ">
-                        <div class="w-full lg:w-[30%] flex  items-center py-2 lg:border-r-2 lg:border-r-color5 my-5 ps-8 lg:ps-0" >
+                        <div class="w-full lg:w-[30%] flex  items-center py-2 lg:border-r-2 lg:border-r-color5 my-5 ps-8 lg:ps-0 cnt" >
                                 <i class="bi bi-telephone-outbound text-4xl me-4 text-white bg-color1 p-3"></i>
                                 <div class="w-full text-white"><p class="font-secondary">Call me</p><p>+91 9783441735, 9685405176</p></div>
                         </div>
-                        <div class="w-full lg:w-[35%] flex items-center py-2 lg:border-r-2 lg:border-r-color5 my-5 ps-8" >
+                        <div class="w-full lg:w-[35%] flex items-center py-2 lg:border-r-2 lg:border-r-color5 my-5 ps-8 cnt" >
                                 <i class="bi-envelope-paper text-4xl me-4 text-white bg-color1 p-3"></i>
                                 <div class="w-full text-white"><p class="font-secondary">Write to me</p><p>mahaveertomar6@gmail.com</p></div>
                         </div>
-                        <div class="w-full lg:w-[30%] flex items-center py-2 my-5 ps-8" >
+                        <div class="w-full lg:w-[30%] flex items-center py-2 my-5 ps-8 cnt" >
                                 <i class="bi bi-map text-4xl me-4 text-white bg-color1 p-3 "></i>
                                 <div class="w-full text-white"><p class="font-secondary">Address</p><p>Jaipur, Rajasthan</p></div>
                         </div>
                 </div>
                 <div class="flex  justify-between  my-10 flex-wrap  ">
-                        <div class="w-full md:w-[30%] flex flex-col py-2  my-5 px-6 " >
+                        <!-- <div class="w-full md:w-[30%] flex flex-col py-2  my-5 px-6 " >
                                 <figure class="w-[80%]">
                                         <img src="" alt="logo" class="w-[100%]">
                                 </figure>
@@ -469,8 +588,8 @@
                                         <li class="me-5"><a href=""><i class="bi bi-github text-white  bg-color1 p-3 rounded-[50%]"></i></a></li>
                                         <li class="me-5"><a href=""><i class="bi bi-linkedin text-white  bg-color1 p-3 rounded-[50%]"></i></a></li>
                                 </ul>
-                        </div>
-                        <div class="w-full md:w-[30%] flex flex-col py-2  my-5 md:ps-20 px-6 " >
+                        </div> -->
+                        <!-- <div class="w-full md:w-[30%] flex flex-col py-2  my-5 md:ps-20 px-6 " >
                               <p class="font-secondary text-white text-xl xl:text-2xl">Quick Links</p>
                               <ul class="mt-7 px-6">
                                 <li class="my-2 list-disc marker:text-color1"><a href="" class="text-color6">About</a></li>
@@ -483,12 +602,15 @@
                               <p class="text-color6 mt-5">Sign up for our monthly blogletter to stay informed about travel and tours</p>
                               <form action="" class="mt-5 flex w-full flex-wrap"><input type="email" placeholder="Email Address" class="px-2 py-5">
                         <a href="" class="text-white bg-color4 py-5 px-3 flex mt-0 md:mt-2 lg:mt-0">Send</a></form>
-                        </div>
+                        </div> -->
                 </div>
-                <p class="text-stone-300 text-left py-5  text-[14px] relative before:content-[''] before:h-[3px] before:w-[100%] before:bg-stone-400 before:absolute before:top-0 before:bg-opacity-50">@TravIndia.com</p>
+                <p id="ft-icon" class="text-stone-300 text-left py-5  text-[14px] relative before:content-[''] before:h-[3px] before:w-[100%] before:bg-stone-400 before:absolute before:top-0 before:bg-opacity-50">@TravIndia.com</p>
         </footer>
     </section>
     </main>
 </body>
+  <!-- GSAP and ScrollTrigger CDN links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/master.js"></script>
 </html>
